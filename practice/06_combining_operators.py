@@ -47,8 +47,14 @@ evaluated correctly
 #   - A student can win a prize if they have grades_above_90 OR
 #     if they have both attendance_above_90 AND extracurriculars.
 
-# SITUATION 1:
-# A student has everything they need, except they have behavior issues.
+# SITUATIONS:
+# 1: A student has everything they need, except they have behavior issues.
+# 2: A student meets the attendance and extracurricular condition,
+#    but has behavior issues.
+# 3: A student meets the attendance condition, and has no behavior issues.
+# 4: A student meets the attendance condition and extracurricular option,
+# and has no behavior issues.
+
 grades_above_90 = True
 attendance_above_90 = True    
 extracurriculars = True  
@@ -73,60 +79,6 @@ The point here is that there aren't parentheses separating the
 various conditions
 '''
 
-# S1.2 - USING PARENTHESES: 
-# Now, we correctly group the conditions to match our logic
-
-if (no_behavior_issues == True
-    and (grades_above_90 == True or (attendance_above_90 == True
-                                     and extracurriculars == True))):
-    print("ex1.2: Student wins the prize! (correct logic)")
-else:
-    print("ex1.2: Student does not win the prize. (correct logic)")
-
-# SITUATION 2:
-# A student meets the attendance and extracurricular condition,
-# but has behavior issues.
-
-grades_above_90 = True
-attendance_above_90 = False
-extracurriculars = False
-no_behavior_issues = False
-
-if (no_behavior_issues == True
-    and (grades_above_90 == True or (attendance_above_90 == True
-                                     and extracurriculars == True))):
-    print("ex2: Student wins the prize!")
-else:
-    print("ex2: Student does not win the prize")
-
-# SITUATION 3:
-# A student meets the attendance condition, and has no behavior issues.
-grades_above_90 = False
-attendance_above_90 = True
-extracurriculars = False
-no_behavior_issues = True
-
-if (no_behavior_issues == True
-    and (grades_above_90 == True or (attendance_above_90 == True
-                                     and extracurriculars == True))):   
-    print("ex3: Student wins the prize!")
-else:
-    print("ex3: Student does not win the prize")
-
-# SITUATION 4:
-# A student meets the attendance condition and extracurricular option,
-# and has no behavior issues.
-grades_above_90 = False
-attendance_above_90 = True
-extracurriculars = True
-no_behavior_issues = True
-
-if (no_behavior_issues == True
-    and (grades_above_90 == True or (attendance_above_90 == True
-                                     and extracurriculars == True))): 
-    print("ex4: Student wins the prize!")
-else:
-    print("ex4: Student does not win the prize")
 
 # 1. MATCH IF STATEMENT TO NEW LOGIC:
 # Let's change the rules:
@@ -137,6 +89,7 @@ else:
 # But they still can't have behavioral issues in any case.
 # evaluate the student below and write an if statement that accurately 
 # reflects this logic:
+
 grades_above_90 = False
 attendance_above_90 = False
 extracurriculars = True
