@@ -23,27 +23,41 @@ Use parentheses to group conditions together to make sure they are
 evaluated correctly
 '''
 
-# SCENARIO FOR EXAMPLES BELOW:
-# A student can win a prize based on a few combinations of conditions.
-# We have 4 conditions we will evaluate:
-#   - grades_above_90
-#   - attendance_above_90
-#   - extracurriculars
-#   - no_behavior_issues
 
-# Rules:
-#   - No student can win a prize if they have behavior issues.
-#   - A student can win a prize if they have grades_above_90 OR
-#     if they have both attendance_above_90 AND extracurriculars.
+# 1. SCENARIO
+'''
+For orders, customers should receive free shipping if the order is not flagged
+and if either the total is over $50 or they have a FREESHIPPING coupon
+Free shipping if the order is not flagged, and (total ≥ 50 OR coupon is “FREESHIP”).
+'''
+# Using the variables below create an if/else statement that prints "FREE SHIPPING"
+# if the order should get free shipping, or "NO FREE SHIPPING" if the order
+# shouldn't get free shipping
 
-# SITUATIONS:
-# 1: A student has everything they need, except they have behavior issues.
-# 2: A student meets the attendance and extracurricular condition,
-#    but has behavior issues.
-# 3: A student meets the attendance condition, and has no behavior issues.
-# 4: A student meets the attendance condition and extracurricular option,
-# and has no behavior issues.
+order_total = 20
+coupon = "FREESHIPPING"
+flagged = False
 
+
+
+
+# 2. SCENARIO:
+'''
+A student can win a prize based on a few combinations of conditions.
+We have 4 conditions we will evaluate:
+  - grades_above_90
+  - attendance_above_90
+  - extracurriculars
+  - no_behavior_issues
+
+Rules:
+  - No student can win a prize if they have behavior issues.
+  - A student can win a prize if they have grades_above_90 OR
+    if they have both attendance_above_90 AND extracurriculars.
+'''
+
+# SITUATION:
+# A student has everything they need, except they have behavior issues.
 grades_above_90 = True
 attendance_above_90 = True    
 extracurriculars = True  
@@ -84,8 +98,4 @@ attendance_above_90 = False
 extracurriculars = True
 no_behavior_issues = True
 
-if no_behavior_issues == True:
-    if grades_above_90 == True or attendance_above_90 == True or extracurriculars == True:
-        print("You get a reward!")
-else:
-    print("Sorry, no prize today. You've got this next time!")
+
