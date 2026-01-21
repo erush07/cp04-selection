@@ -38,6 +38,17 @@ You can also hold shift + tab to tab backwards.
 #       otherwise, print "wow, good choice"
 
 age = 9
-favorite_food = 'candy'
+favorite_food = "candy"
+
+if age <= 10:
+    if favorite_food == "candy":
+        print("You're a kid, makes sense.")
+    else:
+        print("wow, such taste for a young child")
+if age > 10:
+    if favorite_food == "candy":
+        print("You should eat more broccoli")
+    else:
+        print("wow, good choice")
 
 

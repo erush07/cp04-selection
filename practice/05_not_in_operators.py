@@ -24,6 +24,10 @@ num_2 = 12
 # 1. REVERSE A CONDITION
 # Check if num_1 is equal to num_2 but put "not" before the condition.
 
+# if not num_1 == num_2:
+#     print("Num_1 does not = num_2")
+
+
 
 '''
 Note, # 1. isn't very common to do, since you can just replace not == with !=
@@ -51,9 +55,13 @@ if "A" in english_alphabet:
 # Check if "secret" is in example_string. Print "found it" if it is there.
 example_string = "This is a secret message"
 
+# if "secret" in example_string:
+#     print("found it")
+
 
 # 3. CHECK IF STRING IS NOT IN OTHER STRING
 # Check if "crypto" is not in example string.
 # Print "not there" if it isn't there.
 
-
+# if not "crypto" in example_string:
+#     print("not there")

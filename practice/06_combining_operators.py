@@ -84,4 +84,8 @@ attendance_above_90 = False
 extracurriculars = True
 no_behavior_issues = True
 
-
+if no_behavior_issues == True:
+    if grades_above_90 == True or attendance_above_90 == True or extracurriculars == True:
+        print("You get a reward!")
+else:
+    print("Sorry, no prize today. You've got this next time!")

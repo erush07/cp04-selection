@@ -56,5 +56,17 @@ else:
 # Check if the special project was completed to boost the grade
 # Hint: try nested if statements
 
+if completed_project == "yes":
+    if grade == "A":
+        grade = "A"
+    elif grade == "B":
+        grade = "A"
+    elif grade == "C":
+        grade = "B"
+    elif grade == "D":
+        grade = "C"
+    elif grade == "F":
+        grade = "D"
 
 # Print the final grade
+print(grade)

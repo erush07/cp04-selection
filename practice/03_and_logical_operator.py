@@ -34,11 +34,20 @@ num_2 = 12
 # 1. PUT 2 CONDITIONS IN ONE IF STATEMENT
 # Print a message if num_1 doesn't equal 2 and if num_2 is above 10
 
+# if num_1 != num_2 and num_2 > 10:
+#         print("num_1 and num_2 are not equal and num_2 is greater than 10")
+
 
 # 2. PUT 2 CONDITIONS IN ONE IF STATEMENT (AGAIN)
 # Print a message if num_1 doesn't equal 3 and if num_2 is above 10
+
+# if num_1 != 3 and num_2 > 10:
+#         print("Num_1 is not 3 and num_2 is greater than 10")
 
 
 # 3. PUT 3 CONDITIONS IN ONE IF STATEMENT
 # Write any if statement you want, but use 3 "and" operators.
 # Print something if they are all true.
+
+# if num_1 == 3 and num_2 > 10 and num_2 - num_1 > 5:
+#     print("Num_1 is equal to 3 and num_2 is greater than 10, and num_2 - num_1 is greater than 5.")

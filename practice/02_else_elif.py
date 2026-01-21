@@ -36,6 +36,13 @@ else:
 num_1 = 10
 num_2 = 20
 
+# if num_1 == num_2 :
+#     print("They are the same")
+# else :
+#     print("They are different")
+
+# print("This message will always print.")
+
 
 
 # ====
@@ -76,5 +83,13 @@ else:
 
 num_starbursts_eaten = 128
 
+if num_starbursts_eaten < 10:
+    print("Live a little.")
+elif num_starbursts_eaten < 50:
+   print("Nice.")
+elif num_starbursts_eaten < 100:
+    print("Are u full yet?")
+else:
+    print("Woah! Amazing!")
 
 

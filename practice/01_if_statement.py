@@ -40,6 +40,8 @@ print("This is outdented. Therefore, not part of the if statement")
 num_1 = 10
 num_2 = 10
 
+#if num_1 == num_2 :
+    # print("They are the same!")
 
 # 2. COMPARE 2 NUMBERS (AGAIN):
 # Write an if statement that prints "They are different!" if num_3 and num_4
@@ -49,6 +51,11 @@ num_2 = 10
 
 num_3 = 10
 num_4 = 20
+
+# if num_3 != num_4 :
+#     print("They are different!")
+
+# print("This will always print")
 
 
 
@@ -65,6 +72,9 @@ either True or False there's no need to add anything else.
 # "the boolean must have been True."
 
 example_boolean = True
+
+# if example_boolean == True :
+#     print("The boolean must have been True.")
 
 
 
@@ -88,4 +98,6 @@ if num_1 == num_2: print("Example first line"), print("Example last line")
 
 num_5 = 2
 num_6 = 1
+
+if num_5 > num_6 : print("num_5 is bigger")
 

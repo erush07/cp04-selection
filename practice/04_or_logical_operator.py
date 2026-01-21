@@ -32,22 +32,27 @@ num_2 = 12
 # 1. PUT 2 CONDITIONS IN ONE IF STATEMENT
 # Print a message if num_1 doesn't equal 2 or if num_2 is above 10
 
+# if num_1 != 2 or num_2 > 10:
+#     print("either num_1 is not 2 or num_2 is greater than 10, possibly both.")
+
 
 
 # 2. PUT 2 CONDITIONS IN ONE IF STATEMENT (AGAIN)
 # Print a message if iNum doesn't equal 3 or num_2 is above 10
 
+# if num_1 != 3 or num_2 > 10:
+#     print("Either num_1 is not 3 or num_2 is greater than 10.")
 
 
 # 3. PUT 2 CONDITIONS IN ONE IF STATEMENT (AGAIN)
 # Print message if iNum doesn't equal 3 or num_2 doesn't equal 12
 
-
+# if num_1 != 3 or num_2 != 12:
+#     print("Either num_1 is not 3 or num_2 is not 12")
 
 # 4. PUT 3 CONDITIONS IN ONE IF STATEMENT (AGAIN)
 # Write any if statement you want, but use 3 "or" operators.
 # Print something if at least one is true.
 
-
-
-
+# if num_1 == 3 or num_2 == 12 or num_2 - num_1 > 5:
+#     print("Either num_1 = 3 or num_2 = 12 or num_2 - num_1 is greater than 5")
